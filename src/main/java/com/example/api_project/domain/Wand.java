@@ -3,6 +3,8 @@ package com.example.api_project.domain;
 import lombok.Getter;
 import lombok.Setter;
 
+
+//Je pouvais utiliser lombok pour generer le constructeur aussi, mais bon, cette classe n'avait pas trop d'attributs.
 @Setter
 @Getter
 public class Wand {
@@ -16,4 +18,6 @@ public class Wand {
             this.length = length;
         }
 
+        public Wand() {
+        }
 }

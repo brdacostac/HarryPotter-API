@@ -1,5 +1,6 @@
 package com.example.api_project.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +16,8 @@ public class Character {
 
     public String id;
     public String name;
-    public List<String> alternate_names;
+    @JsonProperty("alternate_names") // Pour respecter la convention de nommage camelCase de java, on utilise JsonProperty pour mapper ce string, vue que dans le json on va avoir un snake_case
+    public List<String> alternateNames;
     public String species;
     public String gender;
     public String house;
@@ -30,7 +32,8 @@ public class Character {
     public boolean hogwartsStudent;
     public boolean hogwartsStaff;
     public String actor;
-    public List<String> alternate_actors;
+    @JsonProperty("alternate_actors")
+    public List<String> alternateActors;
     public boolean alive;
     public String image;
 
