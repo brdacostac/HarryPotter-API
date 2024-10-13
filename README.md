@@ -25,7 +25,7 @@ Actuellement, seul l'endpoint permettant de récupérer tous les personnages a �
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/brdacostac/Spring-Personal-API.git
+   git clone https://github.com/brdacostac/HarryPotter-API
    ```
 
 2. Accédez au répertoire du projet :
